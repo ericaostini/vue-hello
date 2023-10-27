@@ -1,3 +1,18 @@
-.imageTitle{
-    background-image: url("img/img.jpg");
+
+
+.image{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.text{
+    text-align: center;
+}
+.blue{
+    color: blue;
+}
+.red{
+    color:red
 }

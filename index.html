@@ -8,9 +8,14 @@
 </head>
 <body>
     <div id="app">
-        <h1>{{ Title }}</h1>
-        <img :src="titleImage">
+        <h1 :class="textCenter" @click="changeTitle">{{ Title }}</h1>
+        <p>Ciao <span :class = "textCol">{{message}}</span></p>
+        <input type="text" v-model = "message" placeholder="nome">
+        <button @click = "changeCol">Evidenzia</button>
+        <img :src="titleImage" :class="radiusImg">
+
     </div>
+
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/script.js"></script>
